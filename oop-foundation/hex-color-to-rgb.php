@@ -24,7 +24,7 @@ class RGB
 
     function readRGBColor()
     {
-          echo "Red = {$this->red}\nGreen = {$this->green}\nBlue = {$this->blue}";  
+        echo "Red = {$this->red}\nGreen = {$this->green}\nBlue = {$this->blue}";
     }
 
     function setColor($colorCode)
@@ -42,24 +42,27 @@ class RGB
             // echo $this->red."\n";
             // echo $this->green."\n";
             // echo $this->blue."\n";
-        }else{
+        } else {
             list($this->red, $this->green, $this->blue) = array(0, 0, 0);
         }
     }
-    function getRed(){
+    function getRed()
+    {
         return $this->red;
     }
-    
-    function getGreen(){
+
+    function getGreen()
+    {
         return $this->green;
     }
 
-    function getBlue(){
+    function getBlue()
+    {
         return $this->blue;
     }
 }
 
 $myColor = new RGB("#00ff00");
-$myColor -> readRGBColor();
+$myColor->readRGBColor();
 echo PHP_EOL;
-echo $myColor -> getGreen();
+echo $myColor->getGreen();
